@@ -1,21 +1,17 @@
 
-
-
 public class Empleado {
-	
+
 	private int codigo;
 
 	private String nombre;
 
-    private String oficio;
+	private String oficio;
 
-    private Double salario;
+	private Double salario;
 
-    private String departamento;
+	private String departamento;
 
-
-
-    public Empleado(int codigo, String nombre, String oficio, Double salario, String departamento) {
+	public Empleado(int codigo, String nombre, String oficio, Double salario, String departamento) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -24,103 +20,76 @@ public class Empleado {
 		this.departamento = departamento;
 	}
 
-
 	public int getCodigo() {
-          return codigo;
+		return codigo;
 
-    }
-
-
-    public void setCodigo(int codigo) {
-          this.codigo = codigo;
-
-    }
-    public String getNombre() {
-		return nombre;
 	}
 
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-
-
 	public String getOficio() {
 		return oficio;
 	}
-
-
 
 	public void setOficio(String oficio) {
 		this.oficio = oficio;
 	}
 
-
-
 	public Double getSalario() {
 		return salario;
 	}
-
-
 
 	public void setSalario(Double salario) {
 		this.salario = salario;
 	}
 
-
-
 	public String getDepartamento() {
 		return departamento;
 	}
-
-
 
 	public void setDepartamento(String departamento) {
 		this.departamento = departamento;
 	}
 
+	public void imprimirTodo() {
 
-    public void imprimirTodo() {
+		imprimirCabecera();
 
-          imprimirCabecera();
+		extracted();
 
-          extracted();
+	}
 
+	private void imprimirCabecera() {
 
+		System.out.println("Empresa ITT");
 
-    }
+		System.out.println("************");
 
-   
+	}
 
-    private void imprimirCabecera() {
+	public void imprimirDatos() {
 
-          System.out.println("Empresa ITT");
+		extracted();
 
-          System.out.println("************");
-
-    }
-
-   
-
-    public void imprimirDatos() {
-
-          extracted();
-
-    }
-
+	}
 
 	private void extracted() {
 		System.out.println("Código: " + codigo);
 
-          System.out.println("Nombre: " + nombre);
+		System.out.println("Nombre: " + nombre);
 
-          System.out.println("Oficio: " + oficio);
+		System.out.println("Oficio: " + oficio);
 	}
-
-
-
-	
 
 }
